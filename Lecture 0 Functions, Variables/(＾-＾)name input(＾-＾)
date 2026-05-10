@@ -1,5 +1,79 @@
+http://docs.python.org/3/library/functions.html 
+
+#this one goes to a new line because of the end="\n" argument in the print function
 name = input ("What's your name?")
 
-print ("Hello,", end="")
+print ("Hello,", end="\n")
 print  (name)
-#this is a comment 
+
+#this one seperates the arguments with "???" instead of a space because of the sep="???" argument in the print function
+
+name = input ("What's your name?")
+
+print("Hello,", name, sep="---")
+
+
+# This is a simple Python program that asks for the user's name and then greets them.
+name = input ("What's your name?")
+
+print (f"Hello, {name}")
+
+https://docs.python.org/3/library/stdtypes.html#string-methods
+
+#Ask user for their name
+name = input("What's your name?")
+
+#Remove white space from str
+name = name.strip()
+
+#Say hello to user 
+print (f"Hello, {name}")   
+
+
+###################
+
+
+#Ask user for their name
+name = input("What's your name?")
+
+#Capitalize user’s name
+name = name.title()
+
+
+#Remove white space from str
+name = name.strip()
+
+#Say hello to user 
+print (f"Hello, {name}")   
+
+###################
+
+#Ask user for their name
+name = input("What's your name?")
+
+#Remove white space from str and capitalize user’s name
+name = name.strip( ).title()
+
+#Say hello to user 
+print (f"Hello, {name}")   
+
+####################
+
+#Ask user for their name, remove white space from str and capitalize user’s name
+name = input ("What's your name?").strip().title()
+
+#Say hello to user 
+print (f"Hello, {name}")
+
+########################
+
+#Ask user for their name, remove white space from str and capitalize user’s name
+name = input ("What's your name?").strip().title()
+
+
+#Split user’s name into first and last
+first, last =name.split (" ")
+
+#Say hello to user 
+print (f"Hello, {name}")
+
