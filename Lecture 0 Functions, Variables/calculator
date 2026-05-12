@@ -1,0 +1,57 @@
+x = 1
+y = 2
+z = x + y
+print(z) 
+
+########################
+
+x = input("What's x? ")
+y = input("What's y? ")
+z = x + y
+print(z)
+Description: Because the input() function returns data as a string (str), the + operator joins the text together instead of adding numbers (e.g., entering 1 and 2 results in 12)
+
+###################################
+
+# Option A: Convert during addition
+x = input("What's x? ")
+y = input("What's y? ")
+z = int(x) + int(y)
+print(z)
+
+# Option B: Nesting functions (more efficient)
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+print(x + y)
+
+ Uses the int() function to turn the user's string input into a whole number (integer) so the computer can perform math
+
+############################
+
+If you want to add numbers with decimal points (real numbers), you use float
+
+x = float(input("What's x? "))
+y = float(input("What's y? "))
+print(x + y)
+
+  ################################
+
+x = float(input("What's x? "))
+y = float(input("What's y? "))
+z = round(x + y)
+print(f"{z:,}")
+Description: Rounds the result to the nearest whole number and uses an f-string with a comma (:,) to format large results (e.g., 1,000 instead of 1000)
+
+###############################
+
+Finally, you can organize the code by defining your own functions and using return to pass data back
+.
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
+
+def square(n):
+    return n * n
+
+main()
+Description: Defines a main() function to handle user input and a square(n) function that calculates the square of a number. The return keyword is used to hand the result back to the caller
